@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ian\\source\\repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj": {}
+    "C:\\Users\\Ian\\Source\\Repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ian\\source\\repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj": {
+    "C:\\Users\\Ian\\Source\\Repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ian\\source\\repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Ian\\Source\\Repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj",
         "projectName": "TestWebAPI",
-        "projectPath": "C:\\Users\\Ian\\source\\repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj",
+        "projectPath": "C:\\Users\\Ian\\Source\\Repos\\FirstTestAPI\\TestWebAPI\\TestWebAPI.csproj",
         "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ian\\source\\repos\\FirstTestAPI\\TestWebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Ian\\Source\\Repos\\FirstTestAPI\\TestWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

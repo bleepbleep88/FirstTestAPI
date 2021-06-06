@@ -5,17 +5,17 @@ using System.Threading.Tasks;
 
 namespace TestWebAPI.Models
 {
-    public class Berry
+    public class Pokemon
     {
-        public String name { get; set; }
+        public string name { get; set; }
         public string url { get; set; }
     }
 
-    public class BerryRoot
+    public class PokemonRoot
     {
         public int count { get; set; }
         public string next { get; set; }
         public object previous { get; set; }
-        public List<Berry> results { get; set; }
+        public List<Pokemon> results { get; set; }
     }
 }
