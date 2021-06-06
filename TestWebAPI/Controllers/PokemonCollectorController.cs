@@ -19,15 +19,12 @@ namespace TestWebAPI.Controllers
         {
             List<Pokemon> PokemonList = new List<Pokemon>();
             HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri("https://pokeapi.co/api/v2/pokemon");
-            HttpResponseMessage response = await httpClient.GetAsync(httpClient.BaseAddress);
+            HttpResponseMessage response = await httpClient.GetAsync("https://pokeapi.co/api/v2/pokemon");
             PokemonRoot result = JsonConvert.DeserializeObject<PokemonRoot>(await response.Content.ReadAsStringAsync());
             PokemonList.AddRange(result.results);
             while(PokemonList.Count < 151)
             {
-                HttpClient newClient = new HttpClient();
-                newClient.BaseAddress = new Uri(result.next);
-                response = await newClient.GetAsync(newClient.BaseAddress);
+                response = await httpClient.GetAsync(new Uri(result.next));
                 result = JsonConvert.DeserializeObject<PokemonRoot>(await response.Content.ReadAsStringAsync());
                 PokemonList.AddRange(result.results);
             }
